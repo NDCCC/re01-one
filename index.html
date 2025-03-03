@@ -266,6 +266,57 @@
             border-radius: 50%;
             object-fit: cover;
         }
+	#contact {
+  	  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+  	  padding: 2rem 0;
+	}
+	/* 联系表单容器，保持原始白色卡片效果 */
+	#contact .container {
+  	  max-width: 600px;
+  	  margin: 0 auto;
+  	  background: #fff;
+  	  padding: 2rem;
+  	  border-radius: 8px;
+  	  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+	/* 表单输入框和文本区域 */
+	form .form-group {
+  	  margin-bottom: 15px;
+  	  text-align: left;
+	}
+	form input, 
+	form textarea {
+  	  width: 100%;
+  	  padding: 10px;
+  	  font-size: 1rem;
+  	  border: 1px solid #ccc;
+  	  border-radius: 5px;
+  	  box-sizing: border-box;
+  	  transition: border 0.3s;
+	}
+	form input:focus, 
+	form textarea:focus {
+  	  border-color: #ff6f61;
+  	  outline: none;
+	}
+
+	/* 提交按钮 */
+	form button {
+  	  background: #ff6f61;
+  	  color: #fff;
+  	  padding: 10px 20px;
+  	  border: none;
+ 	  border-radius: 5px;
+  	  font-size: 1.2rem;
+  	  cursor: pointer;
+  	  display: block;
+  	  margin: 20px auto 0;
+  	  transition: background 0.3s;
+	}
+	form button:hover {
+  	  background: #ff3d2b;
+	}
     </style>
 </head>
 <body>
@@ -294,13 +345,13 @@
         <div class="container">
             <h2>关于我</h2>
             <div class="about-content">
-                <img src="1.png" alt="个人头像" class="circular-img">
+                <img src="gerenzhaopian.jpg" alt="个人头像" class="circular-img">
                 <div class="about-text">
                     <p>我是赵国睿，初学前端开发，热衷于探索最新的 Web 技术与设计趋势。</p>
                     <p>在这里，你将看到我的个人作品、技能展示以及不断更新的技术分享。</p>
                 </div>
                 <!-- 关于我配图，请替换为你自己的图片 -->
-                <img src="about-illustration.png" alt="关于我配图" class="illustration">
+                <img src="guanyuwo.jpg" alt="关于我配图" class="illustration">
             </div>
         </div>
     </section>
@@ -309,7 +360,7 @@
         <div class="container">
             <h2>作品集</h2>
             <!-- 将装饰图片放在标题下方，确保标题依然居中 -->
-            <img src="portfolio-illustration.png" alt="作品集配图" class="portfolio-illustration">
+            <img src="wodexiangmu.png" alt="作品集配图" class="portfolio-illustration">
             <div class="portfolio-grid">
                 <div class="portfolio-item">
                     <img src="project1.jpg" alt="项目1">
@@ -334,6 +385,9 @@
         </div>
     </section>
     <!-- 联系表单 -->
+    <section id="contact" class="section">
+  	<div class="container">
+    	    <h2>联系我</h2>
 	    <form action="https://getform.io/f/bejrlqya" method="POST">
                 <input type="hidden" name="_gotcha" style="display:none;">
                 <div class="form-group">
